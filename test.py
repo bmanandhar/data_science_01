@@ -10,7 +10,6 @@ with open('test.csv', 'r') as csv_file:
         elif line[1] == 'Female':
             female += 1
         else:
-            print(line[1])
             other += 1
 print(line)
 print('Male: ', male, 
