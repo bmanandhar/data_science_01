@@ -15,9 +15,7 @@ with open('test.csv', 'r') as csv_file:
         elif line[1] == 'Female': female += 1
         else: other += 1
 
-        age_list.append(line[2])
-for i in range(len(age_list)):
-    age_list[i] = int(age_list[i])
+        age_list.append(int(line[2]))
 
 arr = np.array(age_list)
 print('Total members: ', len(arr))
