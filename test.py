@@ -17,11 +17,9 @@ with open('test.csv', 'r') as csv_file:
 
         age_list.append(int(line[2]))
 
-arr = np.array(age_list)
-print('Total members: ', len(arr))
+print('Total members: ', len(age_list))
 print('Percentile: ', np.percentile(age_list, 75))
-print('Male: ', male, 
-    ' Female: ', female)
+print('Male: {}\nFemale: {}'.format(male, female))
 
 
 
