@@ -14,8 +14,6 @@ with open('test.csv', 'r') as csv_file:
     for line in csv_reader:
         if line[1] == 'Male': male += 1
         elif line[1] == 'Female': female += 1
-        else: other += 1
-
         age_list.append(int(line[2]))
 #prints total num of members
 print('Total members: ', len(age_list))
@@ -35,7 +33,7 @@ print('Male: {}\nFemale: {}'.format(male, female))
 # for line in file: print(line)
 
 
-
+print(dir(csv))
 
 
 
