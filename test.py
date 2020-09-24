@@ -31,14 +31,16 @@ print('Male: {}\nFemale: {}'.format(male, female))
 
 # path = "F:\data\google_stock_data.csv"
 # file = open(path)
-# for line in file: print(line)
-print(dir(csv))
+with open('sample_data.csv', 'r') as sample:
+        csv_sample = csv.reader(sample)
+        # next(csv_sample)
+        for i in sample:
+            print(i)
 
-
-
-
-
-
+with open('countries.csv', 'r') as countries:
+    countries_data = csv.reader(countries)
+    for i in countries:
+        print(i)
 
 
 
